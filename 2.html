@@ -21,7 +21,7 @@
             flex-direction: column;
         }
         
-        /* 新增：题目导航按钮 */
+        /* 新增：題目导航按钮 */
         .question-nav {
             position: fixed;
             top: 0px;
@@ -54,7 +54,7 @@
             transform: scale(1.1);
         }
         
-        /* 新增：题目指示器 */
+        /* 新增：題目指示器 */
         .question-indicator {
             position: fixed;
             top: 6px;
@@ -511,12 +511,12 @@
     </style>
 </head>
 <body>
-    <!-- 新增：题目指示器 -->
+    <!-- 新增：題目指示器 -->
     <div class="question-indicator" id="question-indicator">
-        第 <span id="current-question">0</span> 题 / 共 <span id="total-questions">8</span> 题
+        第 <span id="current-question">0</span> 題 / 共 <span id="total-questions">8</span> 題
     </div>
     
-    <!-- 新增：题目导航按钮 -->
+    <!-- 新增：題目导航按钮 -->
     <div class="question-nav">
         <a href="#" id="prev-question" class="nav-button">←</a>
         <a href="#" id="next-question" class="nav-button">→</a>
@@ -575,11 +575,11 @@
             const floatingPrev = document.getElementById('floating-prev');
             const floatingNext = document.getElementById('floating-next');
             
-            // 获取题目导航按钮
+            // 获取題目导航按钮
             const prevQuestionBtn = document.getElementById('prev-question');
             const nextQuestionBtn = document.getElementById('next-question');
             
-            // 获取题目指示器元素
+            // 获取題目指示器元素
             const questionIndicator = document.getElementById('question-indicator');
             const currentQuestionSpan = document.getElementById('current-question');
             const totalQuestionsSpan = document.getElementById('total-questions');
@@ -615,7 +615,7 @@
                 }
             }
             
-            // 更新题目指示器
+            // 更新題目指示器
             if (currentQuestionIndex >= 0) {
                 currentQuestionSpan.textContent = currentQuestionIndex + 1;
             }
